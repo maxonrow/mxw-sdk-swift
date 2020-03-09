@@ -14,11 +14,14 @@
 		259C68062416191A003668EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259C68052416191A003668EC /* Assets.xcassets */; };
 		259C68092416191A003668EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259C68072416191A003668EC /* LaunchScreen.storyboard */; };
 		259C681E24161947003668EC /* mxw_sdk_framework_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259C681524161947003668EC /* mxw_sdk_framework_swift.framework */; };
-		259C682524161947003668EC /* mxw_sdk_framework_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C682424161947003668EC /* mxw_sdk_framework_swiftTests.swift */; };
 		259C682724161947003668EC /* mxw_sdk_framework_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 259C681724161947003668EC /* mxw_sdk_framework_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		259C682A24161947003668EC /* mxw_sdk_framework_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259C681524161947003668EC /* mxw_sdk_framework_swift.framework */; };
 		259C682B24161947003668EC /* mxw_sdk_framework_swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 259C681524161947003668EC /* mxw_sdk_framework_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		259C68362416196A003668EC /* Bech32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68352416196A003668EC /* Bech32.swift */; };
+		259C683824161C6F003668EC /* Bech32Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C683724161C6F003668EC /* Bech32Test.swift */; };
+		259C684D24161D8C003668EC /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C684C24161D8C003668EC /* Bytes.swift */; };
+		259C685524161DFE003668EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685424161DFE003668EC /* Constants.swift */; };
+		259C685824161E4C003668EC /* BytesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685724161E4C003668EC /* BytesTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +75,12 @@
 		259C681724161947003668EC /* mxw_sdk_framework_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mxw_sdk_framework_swift.h; sourceTree = "<group>"; };
 		259C681824161947003668EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		259C681D24161947003668EC /* mxw-sdk-framework-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mxw-sdk-framework-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		259C682424161947003668EC /* mxw_sdk_framework_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mxw_sdk_framework_swiftTests.swift; sourceTree = "<group>"; };
 		259C682624161947003668EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		259C68352416196A003668EC /* Bech32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bech32.swift; sourceTree = "<group>"; };
+		259C683724161C6F003668EC /* Bech32Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bech32Test.swift; sourceTree = "<group>"; };
+		259C684C24161D8C003668EC /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bytes.swift; sourceTree = "<group>"; };
+		259C685424161DFE003668EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		259C685724161E4C003668EC /* BytesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +147,11 @@
 		259C681624161947003668EC /* mxw-sdk-framework-swift */ = {
 			isa = PBXGroup;
 			children = (
+				259C683924161C7F003668EC /* utils */,
 				259C683324161950003668EC /* crypto */,
 				259C681724161947003668EC /* mxw_sdk_framework_swift.h */,
 				259C681824161947003668EC /* Info.plist */,
+				259C685424161DFE003668EC /* Constants.swift */,
 			);
 			path = "mxw-sdk-framework-swift";
 			sourceTree = "<group>";
@@ -152,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				259C683424161955003668EC /* crypto */,
-				259C682424161947003668EC /* mxw_sdk_framework_swiftTests.swift */,
+				259C685624161E3B003668EC /* utils */,
 				259C682624161947003668EC /* Info.plist */,
 			);
 			path = "mxw-sdk-framework-swiftTests";
@@ -169,8 +177,25 @@
 		259C683424161955003668EC /* crypto */ = {
 			isa = PBXGroup;
 			children = (
+				259C683724161C6F003668EC /* Bech32Test.swift */,
 			);
 			path = crypto;
+			sourceTree = "<group>";
+		};
+		259C683924161C7F003668EC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				259C684C24161D8C003668EC /* Bytes.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		259C685624161E3B003668EC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				259C685724161E4C003668EC /* BytesTest.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				259C68362416196A003668EC /* Bech32.swift in Sources */,
+				259C684D24161D8C003668EC /* Bytes.swift in Sources */,
+				259C685524161DFE003668EC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				259C682524161947003668EC /* mxw_sdk_framework_swiftTests.swift in Sources */,
+				259C683824161C6F003668EC /* Bech32Test.swift in Sources */,
+				259C685824161E4C003668EC /* BytesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
