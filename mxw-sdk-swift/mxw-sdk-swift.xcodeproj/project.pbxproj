@@ -22,6 +22,10 @@
 		259C684D24161D8C003668EC /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C684C24161D8C003668EC /* Bytes.swift */; };
 		259C685524161DFE003668EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685424161DFE003668EC /* Constants.swift */; };
 		259C685824161E4C003668EC /* BytesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685724161E4C003668EC /* BytesTest.swift */; };
+		259C685F24162FFC003668EC /* Base64s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685A24162FFB003668EC /* Base64s.swift */; };
+		259C686024162FFC003668EC /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685B24162FFB003668EC /* Convert.swift */; };
+		259C686124162FFC003668EC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685C24162FFC003668EC /* String.swift */; };
+		259C686624163BD1003668EC /* ConvertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C686524163BD1003668EC /* ConvertTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		259C684C24161D8C003668EC /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bytes.swift; sourceTree = "<group>"; };
 		259C685424161DFE003668EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		259C685724161E4C003668EC /* BytesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytesTest.swift; sourceTree = "<group>"; };
+		259C685A24162FFB003668EC /* Base64s.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64s.swift; sourceTree = "<group>"; };
+		259C685B24162FFB003668EC /* Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		259C685C24162FFC003668EC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		259C686524163BD1003668EC /* ConvertTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				259C68352416196A003668EC /* Bech32.swift */,
+				259C685A24162FFB003668EC /* Base64s.swift */,
+				259C685B24162FFB003668EC /* Convert.swift */,
+				259C685C24162FFC003668EC /* String.swift */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
@@ -194,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				259C685724161E4C003668EC /* BytesTest.swift */,
+				259C686524163BD1003668EC /* ConvertTest.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -354,7 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				259C68362416196A003668EC /* Bech32.swift in Sources */,
+				259C686024162FFC003668EC /* Convert.swift in Sources */,
 				259C684D24161D8C003668EC /* Bytes.swift in Sources */,
+				259C685F24162FFC003668EC /* Base64s.swift in Sources */,
+				259C686124162FFC003668EC /* String.swift in Sources */,
 				259C685524161DFE003668EC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				259C683824161C6F003668EC /* Bech32Test.swift in Sources */,
+				259C686624163BD1003668EC /* ConvertTest.swift in Sources */,
 				259C685824161E4C003668EC /* BytesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
