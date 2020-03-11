@@ -9,6 +9,7 @@
 import XCTest
 @testable import mxw_sdk_framework_swift
 
+// Expected Results are cross-checked with Java's version of SDK to ensure both SDK works the same way
 class BytesTest: XCTestCase {
     
     func testForTrimLeadingBytes() {
