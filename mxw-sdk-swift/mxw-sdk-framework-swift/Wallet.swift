@@ -6,30 +6,7 @@
 //  Copyright © 2020 William Loke. All rights reserved.
 //
 
-public class Wallet: Signer {
-    
-    func getProvider() {
-        <#code#>
-    }
-    
-    func getAddress() -> String {
-        <#code#>
-    }
-    
-    func getHexAddress() -> String {
-        <#code#>
-    }
-    
-    func getPublicKeyType() -> String {
-        <#code#>
-    }
-    
-    func getCompressedPublicKey() -> String {
-        <#code#>
-    }
-    
-    func signMessage(message: [Int], needToHash: Bool) {
-        <#code#>
-    }
-    
-}
+//public class Wallet: Signer {
+//
+//
+//}

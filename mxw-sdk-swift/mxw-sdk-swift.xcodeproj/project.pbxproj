@@ -34,6 +34,7 @@
 		259C687D2419E361003668EC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687C2419E361003668EC /* Network.swift */; };
 		259C687F241A0AD7003668EC /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687E241A0AD7003668EC /* Wallet.swift */; };
 		259C6882241A0B7A003668EC /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6881241A0B7A003668EC /* Provider.swift */; };
+		259C688F241B1F1D003668EC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C688E241B1F1D003668EC /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		259C687C2419E361003668EC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		259C687E241A0AD7003668EC /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		259C6881241A0B7A003668EC /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		259C688E241B1F1D003668EC /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 		259C683924161C7F003668EC /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				259C688E241B1F1D003668EC /* Address.swift */,
 				259C684C24161D8C003668EC /* Bytes.swift */,
 				259C685A24162FFB003668EC /* Base64s.swift */,
 				259C685B24162FFB003668EC /* Convert.swift */,
@@ -407,6 +410,7 @@
 			files = (
 				259C687F241A0AD7003668EC /* Wallet.swift in Sources */,
 				259C68362416196A003668EC /* Bech32.swift in Sources */,
+				259C688F241B1F1D003668EC /* Address.swift in Sources */,
 				259C686024162FFC003668EC /* Convert.swift in Sources */,
 				259C684D24161D8C003668EC /* Bytes.swift in Sources */,
 				259C685F24162FFC003668EC /* Base64s.swift in Sources */,
