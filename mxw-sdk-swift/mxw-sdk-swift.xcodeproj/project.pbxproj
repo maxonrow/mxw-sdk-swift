@@ -27,10 +27,10 @@
 		259C686124162FFC003668EC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C685C24162FFC003668EC /* String.swift */; };
 		259C686624163BD1003668EC /* ConvertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C686524163BD1003668EC /* ConvertTest.swift */; };
 		259C686E24172B09003668EC /* Base64sTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C686D24172B09003668EC /* Base64sTest.swift */; };
-		259C687024172B36003668EC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C686F24172B36003668EC /* Address.swift */; };
 		259C687224172B40003668EC /* Numerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687124172B40003668EC /* Numerics.swift */; };
 		259C6874241733F9003668EC /* NumericsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6873241733F9003668EC /* NumericsTest.swift */; };
 		259C687624188589003668EC /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687524188589003668EC /* Hash.swift */; };
+		259C688D241B19E7003668EC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C688C241B19E7003668EC /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,10 +95,10 @@
 		259C685C24162FFC003668EC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		259C686524163BD1003668EC /* ConvertTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertTest.swift; sourceTree = "<group>"; };
 		259C686D24172B09003668EC /* Base64sTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64sTest.swift; sourceTree = "<group>"; };
-		259C686F24172B36003668EC /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		259C687124172B40003668EC /* Numerics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numerics.swift; sourceTree = "<group>"; };
 		259C6873241733F9003668EC /* NumericsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericsTest.swift; sourceTree = "<group>"; };
 		259C687524188589003668EC /* Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		259C688C241B19E7003668EC /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,7 @@
 		259C683924161C7F003668EC /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				259C686F24172B36003668EC /* Address.swift */,
+				259C688C241B19E7003668EC /* Address.swift */,
 				259C684C24161D8C003668EC /* Bytes.swift */,
 				259C685A24162FFB003668EC /* Base64s.swift */,
 				259C685B24162FFB003668EC /* Convert.swift */,
@@ -388,13 +388,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259C688D241B19E7003668EC /* Address.swift in Sources */,
 				259C68362416196A003668EC /* Bech32.swift in Sources */,
 				259C686024162FFC003668EC /* Convert.swift in Sources */,
 				259C684D24161D8C003668EC /* Bytes.swift in Sources */,
 				259C685F24162FFC003668EC /* Base64s.swift in Sources */,
 				259C686124162FFC003668EC /* String.swift in Sources */,
 				259C685524161DFE003668EC /* Constants+Extensions.swift in Sources */,
-				259C687024172B36003668EC /* Address.swift in Sources */,
 				259C687624188589003668EC /* Hash.swift in Sources */,
 				259C687224172B40003668EC /* Numerics.swift in Sources */,
 			);
