@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class Constants {
     static let addressPrefix = "mxw"
        static let AddressZero = "mxw000000000000000000000000000000000000000"
