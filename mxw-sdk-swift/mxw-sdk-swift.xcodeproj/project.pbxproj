@@ -35,6 +35,8 @@
 		259C687F241A0AD7003668EC /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687E241A0AD7003668EC /* Wallet.swift */; };
 		259C6882241A0B7A003668EC /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6881241A0B7A003668EC /* Provider.swift */; };
 		259C688F241B1F1D003668EC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C688E241B1F1D003668EC /* Address.swift */; };
+		259C689E241B72E6003668EC /* AES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689D241B72E6003668EC /* AES256.swift */; };
+		259C68A0241B7403003668EC /* AES256Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689F241B7403003668EC /* AES256Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		259C687E241A0AD7003668EC /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		259C6881241A0B7A003668EC /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		259C688E241B1F1D003668EC /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		259C689D241B72E6003668EC /* AES256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256.swift; sourceTree = "<group>"; };
+		259C689F241B7403003668EC /* AES256Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,7 @@
 			children = (
 				259C68352416196A003668EC /* Bech32.swift */,
 				259C687524188589003668EC /* Hash.swift */,
+				259C689D241B72E6003668EC /* AES256.swift */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				259C683724161C6F003668EC /* Bech32Test.swift */,
+				259C689F241B7403003668EC /* AES256Test.swift */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
@@ -419,6 +425,7 @@
 				259C687A2419E2F7003668EC /* Signer.swift in Sources */,
 				259C685524161DFE003668EC /* Constants+Extensions.swift in Sources */,
 				259C6882241A0B7A003668EC /* Provider.swift in Sources */,
+				259C689E241B72E6003668EC /* AES256.swift in Sources */,
 				259C687624188589003668EC /* Hash.swift in Sources */,
 				259C687224172B40003668EC /* Numerics.swift in Sources */,
 			);
@@ -431,6 +438,7 @@
 				259C686E24172B09003668EC /* Base64sTest.swift in Sources */,
 				259C683824161C6F003668EC /* Bech32Test.swift in Sources */,
 				259C686624163BD1003668EC /* ConvertTest.swift in Sources */,
+				259C68A0241B7403003668EC /* AES256Test.swift in Sources */,
 				259C6874241733F9003668EC /* NumericsTest.swift in Sources */,
 				259C685824161E4C003668EC /* BytesTest.swift in Sources */,
 			);
