@@ -12,7 +12,7 @@ protocol Signer {
     func getHexAddress()->String
     func getPublicKeyType()->String
     func getCompressedPublicKey()->String
-    func signMessage(message:[Int], needToHash:Bool)
+    func signMessage(message:[UInt8], needToHash:Bool)
 //    func sign(request:TransactionRequest)->String
 //    func sendTransaction(builder:TransactionValueBuilder)->TransactionResponse
 //    func sendTransaction(request:TransactionRequest)->TransactionResponse

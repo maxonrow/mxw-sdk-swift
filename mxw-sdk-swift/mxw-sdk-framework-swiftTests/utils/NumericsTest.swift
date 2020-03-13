@@ -30,7 +30,7 @@ class NumericsTest: XCTestCase {
             print(error)
         }
         XCTAssertEqual(testResults, expectedResult, "The expected result is not the same")
-        
+
     }
     
     func testForValidHex() {
@@ -74,9 +74,16 @@ class NumericsTest: XCTestCase {
         
         let expectedResult = "0x626364"
         let testResult = Numeric().toHexString(input: bytes, offset: 1, length: 3, withPrefix: true)
-
+        
         XCTAssertEqual(expectedResult, testResult, "The expected result is not the same")
     }
     
+    func testForIsIntegerValue() {
+        let testResult = Numeric().isIntegerValue(value: 2) // 2 is an integer value
+        let testResultTwo = Numeric().isIntegerValue(value: 2.2) // 2.2 is not an integer value
+        
+        XCTAssert(testResult)
+        XCTAssertFalse(testResultTwo)
+    }
 
 }

@@ -16,7 +16,7 @@ public class Numeric {
     
     public func decodeQuantity(value: String) throws -> UInt {
         if !isValidHex(value: value) {
-            throw DecodingError.NotValidHex
+            throw MyDecodingError.NotValidHex
         }
         if let returnValue = UInt((String(value.dropFirst(2))), radix: 16) {
             return returnValue
@@ -80,8 +80,9 @@ public class Numeric {
         }
     }
     
-    public func isIntegetValue(value: UInt) -> Bool {
-        return (value.signum() == 0)
+    public func isIntegerValue(value: Double) -> Bool {
+        return (value.truncatingRemainder(dividingBy: 1) == 0)
+
     }
     
     public init() {}
