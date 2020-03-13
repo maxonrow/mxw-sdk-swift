@@ -141,6 +141,8 @@
 		259C681624161947003668EC /* mxw-sdk-framework-swift */ = {
 			isa = PBXGroup;
 			children = (
+				259C688A241B18FD003668EC /* utils */,
+				259C6889241B18F0003668EC /* providers */,
 				259C683324161950003668EC /* crypto */,
 				259C681724161947003668EC /* mxw_sdk_framework_swift.h */,
 				259C681824161947003668EC /* Info.plist */,
@@ -171,6 +173,20 @@
 			children = (
 			);
 			path = crypto;
+			sourceTree = "<group>";
+		};
+		259C6889241B18F0003668EC /* providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = providers;
+			sourceTree = "<group>";
+		};
+		259C688A241B18FD003668EC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
