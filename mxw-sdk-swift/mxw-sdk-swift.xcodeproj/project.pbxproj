@@ -35,8 +35,16 @@
 		259C687F241A0AD7003668EC /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687E241A0AD7003668EC /* Wallet.swift */; };
 		259C6882241A0B7A003668EC /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6881241A0B7A003668EC /* Provider.swift */; };
 		259C688F241B1F1D003668EC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C688E241B1F1D003668EC /* Address.swift */; };
+		259C6891241B28D5003668EC /* SigningKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6890241B28D5003668EC /* SigningKey.swift */; };
+		259C6893241B2976003668EC /* ECKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6892241B2976003668EC /* ECKeyPair.swift */; };
+		259C6897241B3E84003668EC /* BlockTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6896241B3E84003668EC /* BlockTag.swift */; };
+		259C689A241B5496003668EC /* BlockTagNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6899241B5496003668EC /* BlockTagNumber.swift */; };
+		259C689C241B6091003668EC /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689B241B6091003668EC /* Sign.swift */; };
 		259C689E241B72E6003668EC /* AES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689D241B72E6003668EC /* AES256.swift */; };
 		259C68A0241B7403003668EC /* AES256Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689F241B7403003668EC /* AES256Test.swift */; };
+		259C68A3241F1D4E003668EC /* KycWhiteListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68A2241F1D4E003668EC /* KycWhiteListModel.swift */; };
+		259C68A5241F1F56003668EC /* KycWhiteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68A4241F1F56003668EC /* KycWhiteList.swift */; };
+		259C68A7241F1F6F003668EC /* KycAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68A6241F1F6F003668EC /* KycAddress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,8 +117,16 @@
 		259C687E241A0AD7003668EC /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		259C6881241A0B7A003668EC /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		259C688E241B1F1D003668EC /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		259C6890241B28D5003668EC /* SigningKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningKey.swift; sourceTree = "<group>"; };
+		259C6892241B2976003668EC /* ECKeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECKeyPair.swift; sourceTree = "<group>"; };
+		259C6896241B3E84003668EC /* BlockTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTag.swift; sourceTree = "<group>"; };
+		259C6899241B5496003668EC /* BlockTagNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTagNumber.swift; sourceTree = "<group>"; };
+		259C689B241B6091003668EC /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 		259C689D241B72E6003668EC /* AES256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256.swift; sourceTree = "<group>"; };
 		259C689F241B7403003668EC /* AES256Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Test.swift; sourceTree = "<group>"; };
+		259C68A2241F1D4E003668EC /* KycWhiteListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycWhiteListModel.swift; sourceTree = "<group>"; };
+		259C68A4241F1F56003668EC /* KycWhiteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycWhiteList.swift; sourceTree = "<group>"; };
+		259C68A6241F1F6F003668EC /* KycAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycAddress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,9 +193,10 @@
 		259C681624161947003668EC /* mxw-sdk-framework-swift */ = {
 			isa = PBXGroup;
 			children = (
-				259C687B2419E347003668EC /* networks */,
-				259C6880241A0B41003668EC /* providers */,
 				259C683324161950003668EC /* crypto */,
+				259C687B2419E347003668EC /* networks */,
+				259C6894241B3E57003668EC /* protocol */,
+				259C6880241A0B41003668EC /* providers */,
 				259C683924161C7F003668EC /* utils */,
 				259C681724161947003668EC /* mxw_sdk_framework_swift.h */,
 				259C681824161947003668EC /* Info.plist */,
@@ -205,6 +222,9 @@
 			children = (
 				259C68352416196A003668EC /* Bech32.swift */,
 				259C687524188589003668EC /* Hash.swift */,
+				259C6890241B28D5003668EC /* SigningKey.swift */,
+				259C6892241B2976003668EC /* ECKeyPair.swift */,
+				259C689B241B6091003668EC /* Sign.swift */,
 				259C689D241B72E6003668EC /* AES256.swift */,
 			);
 			path = crypto;
@@ -257,6 +277,42 @@
 				259C6881241A0B7A003668EC /* Provider.swift */,
 			);
 			path = providers;
+			sourceTree = "<group>";
+		};
+		259C6894241B3E57003668EC /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				259C6898241B5488003668EC /* response */,
+				259C6895241B3E76003668EC /* request */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		259C6895241B3E76003668EC /* request */ = {
+			isa = PBXGroup;
+			children = (
+				259C6896241B3E84003668EC /* BlockTag.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		259C6898241B5488003668EC /* response */ = {
+			isa = PBXGroup;
+			children = (
+				259C68A1241F1D31003668EC /* kyc */,
+				259C6899241B5496003668EC /* BlockTagNumber.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		259C68A1241F1D31003668EC /* kyc */ = {
+			isa = PBXGroup;
+			children = (
+				259C68A2241F1D4E003668EC /* KycWhiteListModel.swift */,
+				259C68A4241F1F56003668EC /* KycWhiteList.swift */,
+				259C68A6241F1F6F003668EC /* KycAddress.swift */,
+			);
+			path = kyc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,17 +470,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259C68A7241F1F6F003668EC /* KycAddress.swift in Sources */,
+				259C6897241B3E84003668EC /* BlockTag.swift in Sources */,
+				259C689A241B5496003668EC /* BlockTagNumber.swift in Sources */,
+				259C689C241B6091003668EC /* Sign.swift in Sources */,
+				259C68A5241F1F56003668EC /* KycWhiteList.swift in Sources */,
 				259C687F241A0AD7003668EC /* Wallet.swift in Sources */,
 				259C68362416196A003668EC /* Bech32.swift in Sources */,
 				259C688F241B1F1D003668EC /* Address.swift in Sources */,
 				259C686024162FFC003668EC /* Convert.swift in Sources */,
+				259C68A3241F1D4E003668EC /* KycWhiteListModel.swift in Sources */,
 				259C684D24161D8C003668EC /* Bytes.swift in Sources */,
+				259C6891241B28D5003668EC /* SigningKey.swift in Sources */,
 				259C685F24162FFC003668EC /* Base64s.swift in Sources */,
 				259C686124162FFC003668EC /* String.swift in Sources */,
 				259C687D2419E361003668EC /* Network.swift in Sources */,
 				259C687A2419E2F7003668EC /* Signer.swift in Sources */,
 				259C685524161DFE003668EC /* Constants+Extensions.swift in Sources */,
 				259C6882241A0B7A003668EC /* Provider.swift in Sources */,
+				259C6893241B2976003668EC /* ECKeyPair.swift in Sources */,
 				259C689E241B72E6003668EC /* AES256.swift in Sources */,
 				259C687624188589003668EC /* Hash.swift in Sources */,
 				259C687224172B40003668EC /* Numerics.swift in Sources */,
