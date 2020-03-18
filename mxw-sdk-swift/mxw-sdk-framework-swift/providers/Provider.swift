@@ -50,5 +50,4 @@ protocol Provider {
 //    func getAliasState(name: String, blockTag: BlockTag) -> String
     
 //    func waitForTransaction(transactionHash: String, confirmation: UInt) -> TransactionReceipt
-    
 }

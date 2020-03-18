@@ -15,9 +15,30 @@ public class ECKeyPair {
     private var compressedPublicKey: UInt = 0
     private var publicKeyBytes: [UInt8] = []
     
-    //    public func create(keyPair: KeyPair) -> ECKeyPair {
-    //
-    //    }
+    public func create() -> [String : SecKey] {
+        self.getKey()!
+    }
+    
+    func getKey() -> [String: SecKey]? {
+
+        let attributes: [String: Any] =
+            [kSecAttrKeySizeInBits as String: 256,
+             kSecAttrKeyType as String: kSecAttrKeyTypeEC,
+             kSecPrivateKeyAttrs as String:
+                [kSecAttrIsPermanent as String:    false]
+        ]
+        var error: Unmanaged<CFError>?
+            guard let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error) else {
+                let err = error!.takeRetainedValue() as Error
+                print(err.localizedDescription)
+                return nil
+            }
+            guard let publicKey = SecKeyCopyPublicKey(privateKey) else {
+                print("Error occured while creating public key")
+                return nil
+            }
+            return ["publicKey": publicKey, "privateKey": privateKey]
+    }
     
     func getPrivateKey() -> String {
         return Numeric().toHexStringWithPrefix(value: self.privateKey)

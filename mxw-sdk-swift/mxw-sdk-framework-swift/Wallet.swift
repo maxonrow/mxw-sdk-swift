@@ -9,7 +9,9 @@
 //public class Wallet: Signer {
 //
 //    var signingKey = SigningKey()
-//    
+//    var provider = Provider()
+//    var accountNumber: UInt
+//    var transactionManager: TransactionManager
 //    func getProvider() {
 //        return
 //    }
