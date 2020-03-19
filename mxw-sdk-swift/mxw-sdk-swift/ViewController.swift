@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             let timeInMiliSecDate = Date()
             let timeInMiliSec = Int (timeInMiliSecDate.timeIntervalSince1970 * 1000)
             print("encryption starts at \(timeInMiliSec) milliseconds")
-            let aes = try AES(key: Array("secret0key000000".utf8), blockMode: 3s, padding: .noPadding).encrypt(convertedString)
+            let aes = try AES(key: Array("secret0key000000".utf8), blockMode: CBC(iv: Array("0123456789012345".utf8)), padding: .noPadding).encrypt(convertedString)
             let timeInMiliSecDate2 = Date()
             let timeInMiliSec2 = Int (timeInMiliSecDate2.timeIntervalSince1970 * 1000)
             print("time for encryption is \(timeInMiliSec2 - timeInMiliSec) milliseconds")

@@ -6,4 +6,12 @@
 //  Copyright © 2020 William Loke. All rights reserved.
 //
 
-import Foundation
+public class KycWhiteList {
+    private var kycData: KycData
+    private var kycOwner: String
+    
+    public init(kycData: KycData, kycOwner: String) {
+        self.kycData = kycData
+        self.kycOwner = kycOwner
+    }
+}
