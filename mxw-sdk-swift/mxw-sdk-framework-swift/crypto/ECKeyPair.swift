@@ -53,9 +53,6 @@ public class ECKeyPair {
         self.publicKey = publicKey
         self.compressedPublicKey = Sign().publicKeyFromPrivate(privKey: privateKey, compressed: true)
         self.publicKeyBytes = Numeric().hexStringToByteArray(input: getPublicKey())
-        
     }
-    
-    
     
 }

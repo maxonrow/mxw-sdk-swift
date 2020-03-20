@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         //        print(Numeric().hexStringToByteArray(input: "abc"))
         //        print(Hash.init().sha3String(utf8String: "123"))
         // Do any additional setup after loading the view.
+        print(ECKeyPair(privateKey: <#T##UInt#>, publicKey: <#T##UInt#>).create())
     }
     
     @IBAction func tapped(_ sender: Any) {

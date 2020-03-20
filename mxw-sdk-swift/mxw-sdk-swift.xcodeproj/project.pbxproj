@@ -11,6 +11,9 @@
 		252AC33B24231F3E00083C0D /* KycWhiteListPayLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33A24231F3E00083C0D /* KycWhiteListPayLoad.swift */; };
 		252AC33D242320D500083C0D /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33C242320D500083C0D /* Signature.swift */; };
 		252AC33F2423210200083C0D /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33E2423210200083C0D /* PublicKey.swift */; };
+		252AC341242452F300083C0D /* KycRevokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC340242452F300083C0D /* KycRevokeModel.swift */; };
+		252AC344242453FF00083C0D /* KycRevokePayLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC343242453FF00083C0D /* KycRevokePayLoad.swift */; };
+		252AC3462424549500083C0D /* KycRevoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC3452424549500083C0D /* KycRevoke.swift */; };
 		259C67FD24161919003668EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FC24161919003668EC /* AppDelegate.swift */; };
 		259C67FF24161919003668EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FE24161919003668EC /* SceneDelegate.swift */; };
 		259C680124161919003668EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C680024161919003668EC /* ViewController.swift */; };
@@ -130,6 +133,9 @@
 		252AC33A24231F3E00083C0D /* KycWhiteListPayLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycWhiteListPayLoad.swift; sourceTree = "<group>"; };
 		252AC33C242320D500083C0D /* Signature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
 		252AC33E2423210200083C0D /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		252AC340242452F300083C0D /* KycRevokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycRevokeModel.swift; sourceTree = "<group>"; };
+		252AC343242453FF00083C0D /* KycRevokePayLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycRevokePayLoad.swift; sourceTree = "<group>"; };
+		252AC3452424549500083C0D /* KycRevoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycRevoke.swift; sourceTree = "<group>"; };
 		259C67F924161919003668EC /* mxw-sdk-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mxw-sdk-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		259C67FC24161919003668EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		259C67FE24161919003668EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -389,10 +395,13 @@
 		259C68A1241F1D31003668EC /* kyc */ = {
 			isa = PBXGroup;
 			children = (
-				252AC33824231EC400083C0D /* KycData.swift */,
-				259C68A2241F1D4E003668EC /* KycWhiteListModel.swift */,
-				259C68A4241F1F56003668EC /* KycWhiteList.swift */,
 				259C68A6241F1F6F003668EC /* KycAddress.swift */,
+				252AC33824231EC400083C0D /* KycData.swift */,
+				252AC3452424549500083C0D /* KycRevoke.swift */,
+				252AC340242452F300083C0D /* KycRevokeModel.swift */,
+				252AC343242453FF00083C0D /* KycRevokePayLoad.swift */,
+				259C68A4241F1F56003668EC /* KycWhiteList.swift */,
+				259C68A2241F1D4E003668EC /* KycWhiteListModel.swift */,
 				252AC33A24231F3E00083C0D /* KycWhiteListPayLoad.swift */,
 			);
 			path = kyc;
@@ -620,6 +629,7 @@
 				259C6907241F64CE003668EC /* UInt64+Extension.swift in Sources */,
 				259C68F5241F621B003668EC /* AES.Cryptors.swift in Sources */,
 				259C68D5241F4DB4003668EC /* MD5.swift in Sources */,
+				252AC341242452F300083C0D /* KycRevokeModel.swift in Sources */,
 				259C68FF241F634C003668EC /* StreamDecryptor.swift in Sources */,
 				259C687F241A0AD7003668EC /* Wallet.swift in Sources */,
 				259C68C7241F4C47003668EC /* BlockMode.swift in Sources */,
@@ -644,6 +654,7 @@
 				252AC33B24231F3E00083C0D /* KycWhiteListPayLoad.swift in Sources */,
 				259C6891241B28D5003668EC /* SigningKey.swift in Sources */,
 				252AC33924231EC400083C0D /* KycData.swift in Sources */,
+				252AC3462424549500083C0D /* KycRevoke.swift in Sources */,
 				259C68AE241F4B82003668EC /* BlockCipher.swift in Sources */,
 				259C68E3241F4ED9003668EC /* Int+Extension.swift in Sources */,
 				252AC33F2423210200083C0D /* PublicKey.swift in Sources */,
@@ -651,6 +662,7 @@
 				259C685F24162FFC003668EC /* Base64s.swift in Sources */,
 				259C686124162FFC003668EC /* String.swift in Sources */,
 				259C6903241F645D003668EC /* BlockDecryptor.swift in Sources */,
+				252AC344242453FF00083C0D /* KycRevokePayLoad.swift in Sources */,
 				259C687D2419E361003668EC /* Network.swift in Sources */,
 				259C68ED241F5018003668EC /* PKCS5.swift in Sources */,
 				259C68EF241F503B003668EC /* PKCS7Padding.swift in Sources */,
