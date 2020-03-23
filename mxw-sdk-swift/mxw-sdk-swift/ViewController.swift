@@ -19,15 +19,10 @@ class ViewController: UIViewController {
         let dataOne: [Character] = ["a","b","c","d","e"]
         let bytes: [UInt8] = Array(String(dataOne).utf8)
         
-        
+        print(Secp256k1.init().sign(message: bytes))
+//        print(Secp256k1.init().getPrivateKey())
         //        print(AES256CBC.encryptString(stringFile, password: "12345678901234567890123456789012") as Any)
-        
-        
-        
-        //        print(Numeric().hexStringToByteArray(input: "abc"))
-        //        print(Hash.init().sha3String(utf8String: "123"))
         // Do any additional setup after loading the view.
-        print(ECKeyPair(privateKey: <#T##UInt#>, publicKey: <#T##UInt#>).create())
     }
     
     @IBAction func tapped(_ sender: Any) {

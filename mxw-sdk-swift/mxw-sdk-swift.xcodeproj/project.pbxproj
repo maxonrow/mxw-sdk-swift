@@ -10,10 +10,15 @@
 		252AC33924231EC400083C0D /* KycData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33824231EC400083C0D /* KycData.swift */; };
 		252AC33B24231F3E00083C0D /* KycWhiteListPayLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33A24231F3E00083C0D /* KycWhiteListPayLoad.swift */; };
 		252AC33D242320D500083C0D /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33C242320D500083C0D /* Signature.swift */; };
-		252AC33F2423210200083C0D /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33E2423210200083C0D /* PublicKey.swift */; };
 		252AC341242452F300083C0D /* KycRevokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC340242452F300083C0D /* KycRevokeModel.swift */; };
 		252AC344242453FF00083C0D /* KycRevokePayLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC343242453FF00083C0D /* KycRevokePayLoad.swift */; };
 		252AC3462424549500083C0D /* KycRevoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC3452424549500083C0D /* KycRevoke.swift */; };
+		252AC352242852AB00083C0D /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; };
+		252AC353242852AB00083C0D /* secp256k1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		252AC35624285D3300083C0D /* SawtoothSigning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; };
+		252AC35724285D3300083C0D /* SawtoothSigning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		252AC359242861B100083C0D /* Secp256k1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC358242861B100083C0D /* Secp256k1.swift */; };
+		252AC35B2428647A00083C0D /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC35A2428647A00083C0D /* PublicKey.swift */; };
 		259C67FD24161919003668EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FC24161919003668EC /* AppDelegate.swift */; };
 		259C67FF24161919003668EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FE24161919003668EC /* SceneDelegate.swift */; };
 		259C680124161919003668EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C680024161919003668EC /* ViewController.swift */; };
@@ -36,13 +41,11 @@
 		259C686E24172B09003668EC /* Base64sTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C686D24172B09003668EC /* Base64sTest.swift */; };
 		259C687224172B40003668EC /* Numerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687124172B40003668EC /* Numerics.swift */; };
 		259C6874241733F9003668EC /* NumericsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6873241733F9003668EC /* NumericsTest.swift */; };
-		259C687A2419E2F7003668EC /* Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68792419E2F7003668EC /* Signer.swift */; };
 		259C687D2419E361003668EC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687C2419E361003668EC /* Network.swift */; };
 		259C687F241A0AD7003668EC /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C687E241A0AD7003668EC /* Wallet.swift */; };
 		259C6882241A0B7A003668EC /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6881241A0B7A003668EC /* Provider.swift */; };
 		259C688F241B1F1D003668EC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C688E241B1F1D003668EC /* Address.swift */; };
 		259C6891241B28D5003668EC /* SigningKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6890241B28D5003668EC /* SigningKey.swift */; };
-		259C6893241B2976003668EC /* ECKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6892241B2976003668EC /* ECKeyPair.swift */; };
 		259C6897241B3E84003668EC /* BlockTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6896241B3E84003668EC /* BlockTag.swift */; };
 		259C689A241B5496003668EC /* BlockTagNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6899241B5496003668EC /* BlockTagNumber.swift */; };
 		259C689C241B6091003668EC /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689B241B6091003668EC /* Sign.swift */; };
@@ -115,6 +118,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		252AC354242852AB00083C0D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				252AC353242852AB00083C0D /* secp256k1.framework in Embed Frameworks */,
+				252AC35724285D3300083C0D /* SawtoothSigning.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		259C682F24161947003668EC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,10 +147,13 @@
 		252AC33824231EC400083C0D /* KycData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycData.swift; sourceTree = "<group>"; };
 		252AC33A24231F3E00083C0D /* KycWhiteListPayLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycWhiteListPayLoad.swift; sourceTree = "<group>"; };
 		252AC33C242320D500083C0D /* Signature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
-		252AC33E2423210200083C0D /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
 		252AC340242452F300083C0D /* KycRevokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycRevokeModel.swift; sourceTree = "<group>"; };
 		252AC343242453FF00083C0D /* KycRevokePayLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycRevokePayLoad.swift; sourceTree = "<group>"; };
 		252AC3452424549500083C0D /* KycRevoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycRevoke.swift; sourceTree = "<group>"; };
+		252AC351242852AB00083C0D /* secp256k1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = secp256k1.framework; path = Carthage/Build/iOS/secp256k1.framework; sourceTree = "<group>"; };
+		252AC35524285D3300083C0D /* SawtoothSigning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SawtoothSigning.framework; path = Carthage/Build/iOS/SawtoothSigning.framework; sourceTree = "<group>"; };
+		252AC358242861B100083C0D /* Secp256k1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secp256k1.swift; sourceTree = "<group>"; };
+		252AC35A2428647A00083C0D /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
 		259C67F924161919003668EC /* mxw-sdk-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mxw-sdk-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		259C67FC24161919003668EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		259C67FE24161919003668EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,13 +179,11 @@
 		259C686D24172B09003668EC /* Base64sTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64sTest.swift; sourceTree = "<group>"; };
 		259C687124172B40003668EC /* Numerics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numerics.swift; sourceTree = "<group>"; };
 		259C6873241733F9003668EC /* NumericsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericsTest.swift; sourceTree = "<group>"; };
-		259C68792419E2F7003668EC /* Signer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signer.swift; sourceTree = "<group>"; };
 		259C687C2419E361003668EC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		259C687E241A0AD7003668EC /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		259C6881241A0B7A003668EC /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		259C688E241B1F1D003668EC /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		259C6890241B28D5003668EC /* SigningKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningKey.swift; sourceTree = "<group>"; };
-		259C6892241B2976003668EC /* ECKeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECKeyPair.swift; sourceTree = "<group>"; };
 		259C6896241B3E84003668EC /* BlockTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTag.swift; sourceTree = "<group>"; };
 		259C6899241B5496003668EC /* BlockTagNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTagNumber.swift; sourceTree = "<group>"; };
 		259C689B241B6091003668EC /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
@@ -228,6 +244,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252AC352242852AB00083C0D /* secp256k1.framework in Frameworks */,
+				252AC35624285D3300083C0D /* SawtoothSigning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +260,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252AC350242852AB00083C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				252AC35524285D3300083C0D /* SawtoothSigning.framework */,
+				252AC351242852AB00083C0D /* secp256k1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		259C67F024161919003668EC = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +276,7 @@
 				259C681624161947003668EC /* mxw-sdk-framework-swift */,
 				259C682324161947003668EC /* mxw-sdk-framework-swiftTests */,
 				259C67FA24161919003668EC /* Products */,
+				252AC350242852AB00083C0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,7 +315,6 @@
 				259C681724161947003668EC /* mxw_sdk_framework_swift.h */,
 				259C681824161947003668EC /* Info.plist */,
 				259C685424161DFE003668EC /* Constants+Extensions.swift */,
-				259C68792419E2F7003668EC /* Signer.swift */,
 				259C687E241A0AD7003668EC /* Wallet.swift */,
 			);
 			path = "mxw-sdk-framework-swift";
@@ -309,7 +336,7 @@
 				259C68A8241F4B0D003668EC /* AES */,
 				259C68352416196A003668EC /* Bech32.swift */,
 				259C6890241B28D5003668EC /* SigningKey.swift */,
-				259C6892241B2976003668EC /* ECKeyPair.swift */,
+				252AC358242861B100083C0D /* Secp256k1.swift */,
 				259C689B241B6091003668EC /* Sign.swift */,
 			);
 			path = crypto;
@@ -386,8 +413,8 @@
 			children = (
 				259C68A1241F1D31003668EC /* kyc */,
 				259C6899241B5496003668EC /* BlockTagNumber.swift */,
+				252AC35A2428647A00083C0D /* PublicKey.swift */,
 				252AC33C242320D500083C0D /* Signature.swift */,
-				252AC33E2423210200083C0D /* PublicKey.swift */,
 			);
 			path = response;
 			sourceTree = "<group>";
@@ -501,6 +528,7 @@
 				259C681124161947003668EC /* Sources */,
 				259C681224161947003668EC /* Frameworks */,
 				259C681324161947003668EC /* Resources */,
+				252AC354242852AB00083C0D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -636,6 +664,7 @@
 				259C68B0241F4BC3003668EC /* Cipher.swift in Sources */,
 				259C68FB241F62AF003668EC /* UInt32+Extension.swift in Sources */,
 				259C68D1241F4D3C003668EC /* SHA3.swift in Sources */,
+				252AC359242861B100083C0D /* Secp256k1.swift in Sources */,
 				259C68362416196A003668EC /* Bech32.swift in Sources */,
 				259C688F241B1F1D003668EC /* Address.swift in Sources */,
 				259C68D7241F4DCB003668EC /* SHA2.swift in Sources */,
@@ -657,7 +686,6 @@
 				252AC3462424549500083C0D /* KycRevoke.swift in Sources */,
 				259C68AE241F4B82003668EC /* BlockCipher.swift in Sources */,
 				259C68E3241F4ED9003668EC /* Int+Extension.swift in Sources */,
-				252AC33F2423210200083C0D /* PublicKey.swift in Sources */,
 				259C68E9241F4FDF003668EC /* ZeroPadding.swift in Sources */,
 				259C685F24162FFC003668EC /* Base64s.swift in Sources */,
 				259C686124162FFC003668EC /* String.swift in Sources */,
@@ -665,8 +693,8 @@
 				252AC344242453FF00083C0D /* KycRevokePayLoad.swift in Sources */,
 				259C687D2419E361003668EC /* Network.swift in Sources */,
 				259C68ED241F5018003668EC /* PKCS5.swift in Sources */,
+				252AC35B2428647A00083C0D /* PublicKey.swift in Sources */,
 				259C68EF241F503B003668EC /* PKCS7Padding.swift in Sources */,
-				259C687A2419E2F7003668EC /* Signer.swift in Sources */,
 				259C68D9241F4DFA003668EC /* SHA1.swift in Sources */,
 				259C68F1241F5080003668EC /* ISO78164Padding.swift in Sources */,
 				259C685524161DFE003668EC /* Constants+Extensions.swift in Sources */,
@@ -675,7 +703,6 @@
 				259C68D3241F4D5B003668EC /* DigestType.swift in Sources */,
 				259C6882241A0B7A003668EC /* Provider.swift in Sources */,
 				259C68B2241F4BFB003668EC /* Array+Extension.swift in Sources */,
-				259C6893241B2976003668EC /* ECKeyPair.swift in Sources */,
 				259C690D241F67BE003668EC /* CBC.swift in Sources */,
 				259C68CD241F4CE9003668EC /* SecureBytes.swift in Sources */,
 				259C687224172B40003668EC /* Numerics.swift in Sources */,
@@ -899,6 +926,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mxw-sdk-framework-swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -928,6 +959,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mxw-sdk-framework-swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

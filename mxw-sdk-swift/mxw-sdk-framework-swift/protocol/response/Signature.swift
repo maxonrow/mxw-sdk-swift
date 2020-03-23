@@ -8,10 +8,10 @@
 
 public class Signature {
     
-    private var publicKey: PublicKey
+    private var publicKey: MXWPublicKey
     private var signature: String
     
-    public init(publicKey: PublicKey, signature: String) {
+    public init(publicKey: MXWPublicKey, signature: String) {
         self.publicKey = publicKey
         self.signature = signature
     }

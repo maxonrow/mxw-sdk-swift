@@ -6,7 +6,7 @@
 //  Copyright © 2020 William Loke. All rights reserved.
 //
 
-public class PublicKey {
+public class MXWPublicKey {
     private var type: String
     private var value: String
     

@@ -8,10 +8,10 @@
 
 public class KycWhiteListPayLoad {
     private var kycWhitelistModel: KycWhiteListModel
-    private var pubKey: PublicKey
+    private var pubKey: MXWPublicKey
     private var signature: String
     
-    public init(kycWhitelistModel: KycWhiteListModel, pubKey: PublicKey, signature: String ) {
+    public init(kycWhitelistModel: KycWhiteListModel, pubKey: MXWPublicKey, signature: String ) {
         self.kycWhitelistModel = kycWhitelistModel
         self.pubKey = pubKey
         self.signature = signature
