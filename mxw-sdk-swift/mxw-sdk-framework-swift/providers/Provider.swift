@@ -10,8 +10,8 @@ protocol Provider {
     func getNetwork()
     func getBlockNumber() -> UInt
     
-    // func getTransactionRequest(route: String, transactionType: String, builder: TransactionValueBuilder) -> TransactionRequest
-    // func getTransactionFee(route: String, transactionType: String, request: TransactionRequest) -> TransactionFee
+     func getTransactionRequest(route: String, transactionType: String, builder: TransactionValueBuilder) -> TransactionRequest
+     func getTransactionFee(route: String, transactionType: String, request: TransactionRequest) -> TransactionFee
     // func getTransactionFeeSetting(transactionType: String) -> TransactionFeeSetting
     
     func getStatus()
