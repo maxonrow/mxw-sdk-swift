@@ -6,6 +6,6 @@
 //  Copyright © 2020 William Loke. All rights reserved.
 //
 
-protocol BlockTag {
+public protocol BlockTag {
 
 }
