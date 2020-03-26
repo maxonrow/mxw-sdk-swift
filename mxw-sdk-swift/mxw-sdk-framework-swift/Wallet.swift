@@ -5,64 +5,83 @@
 //  Created by William Loke on 12/03/2020.
 //  Copyright © 2020 William Loke. All rights reserved.
 //
+import CryptoKit
 
-public class Wallet {
+public class Wallet: SignerProvider {
     
-    //    var signingKey = SigningKey()
-    //    var provider = Provider()
-    //    var accountNumber: UInt
-    //    var transactionManager: TransactionManager
-    //    func getProvider() {
-    //        return
-    //    }
-    //
+    static  let MISSING_PROVIDER = "missing provider";
+    var signingKey = SigningKey()
+    var provider : Provider?
+    var accountNumber: UInt = 0
+    var transactionManager : TransactionManager?
+    func getProvider() {
+            
+    }
+    public init( privateKey:SigningKey) {
+        
+    }
     
     func getAddress() -> String {
-        return ""
+        return signingKey.getAddress()
     }
-    
     func getHexAddress() -> String {
-        return ""
+        return signingKey.getHexAddress()
     }
-    
     func getPublicKey() -> String {
-        
-        return "PubKeySecp256k1"
+        return signingKey.getPublicKey()//"PubKeySecp256k1"
     }
+    func getPublicKeyType() -> String {
+           return signingKey.getPublicKeyType()//"PubKeySecp256k1"
+    }
+    func getCompressedPublicKey() -> String {
+        return signingKey.getCompressedPublicKey()
+    }
+    func getPrivateKey()->String{
+        return signingKey.getPrivateKey()
+    }
+    func signMessage(message: [UInt8], needToHash: Bool) -> String {
+           let signedMessage = Secp256k1().sign(message: message)
+           return signedMessage
+       }
+//    func sendTransaction(request: TransactionRequest) -> TransactionResponse {
+//
+//    }
+    func sign(request: TransactionRequest) {
+        self.transactionManager!.signAndSerialize(request: request)
+    }
+//    func sendTransaction(builder: TransactionValueBuilder) -> TransactionResponse {
+//       // return self.transactionManager!.sendTransaction(builder: builder)
+//    }
+    
     
     func sendTransaction() {
         
     }
-    
-    func getPublicKeyType() -> String {
-        return "PubKeySecp256k1"
-    }
-    
     func isWhiteListed(blockTag: BlockTag) -> Bool {
-        
         return false
     }
-    
-    func getCompressedPublicKey() -> String {
-        return ""
-    }
-    
     func sign() {
         
     }
-    
     func createRandom() {
         
     }
-    
-    func signMessage(message: [UInt8], needToHash: Bool) -> String {
-        let signedMessage = Secp256k1().sign(message: message)
-        return signedMessage
-    }
-    
     func getKycAddress() {
         
     }
-    
-    public init() {}
+    func getAccountNumber(){
+        
+    }
+    public func getKycAddress(blockTag:BlockTag)->String {
+        return (self.provider?.getKycAddress(addressOrName: blockTag as! String))!
+    }
+    public func getBalance(blockTag:BlockTag) {
+        return (self.provider?.getBlock(blockHashOrBlockTag: blockTag))!
+    }
+    public func  createNewWallet() {
+        
+    }
+//    public init() {
+//
+//    }
 }
