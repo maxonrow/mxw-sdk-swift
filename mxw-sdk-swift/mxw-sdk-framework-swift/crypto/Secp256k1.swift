@@ -10,9 +10,10 @@
 import SawtoothSigning
 
 public class Secp256k1 {
+
     private var signer: Signer
     private var privateKey: PrivateKey
-    private var context = Secp256k1Context()
+    private static var context = Secp256k1Context()          // << shared !!
 
     public func sign(message: [UInt8]) -> String {
         var result = ""
@@ -23,23 +24,8 @@ public class Secp256k1 {
         }
         return result
     }
-    
-    public func verify(signature: String, message: [UInt8]) -> Bool {
-        let context = Secp256k1Context()
-        let pubKey: PublicKey
-        var result = false
-        do {
-            pubKey = try signer.getPublicKey() 
-            result = try context.verify(signature: signature, data: message, publicKey: pubKey)
-        } catch {
-            if #available(iOS 10.0, *) {
-                print("Error creating public key")
-            }
-        }
-        return result
-    }
-    
-    public func getPrivateKey() -> PrivateKey {
+
+    public static func getPrivateKey() -> PrivateKey {        // << shared !!
         if let privateKey = UserDefaults.standard.string(forKey: "privateKey") {
             return Secp256k1PrivateKey.fromHex(hexPrivKey: privateKey)
         } else {
@@ -56,9 +42,9 @@ public class Secp256k1 {
             return privateKey
         }
     }
-    
+
     public init() {
-        self.privateKey = Secp256k1().getPrivateKey()
-        self.signer = Signer(context: context, privateKey: self.privateKey)
+        self.privateKey = Secp256k1.getPrivateKey()       // no cycle now !!
+        self.signer = Signer(context: Secp256k1.context, privateKey: self.privateKey)
     }
 }

@@ -9,7 +9,7 @@ import CryptoKit
 
 public class Wallet: SignerProvider {
     
-    static  let MISSING_PROVIDER = "missing provider";
+    static let MISSING_PROVIDER = "missing provider";
     var signingKey = SigningKey()
     var provider : Provider?
     var accountNumber: UInt = 0
@@ -52,7 +52,6 @@ public class Wallet: SignerProvider {
 //    func sendTransaction(builder: TransactionValueBuilder) -> TransactionResponse {
 //       // return self.transactionManager!.sendTransaction(builder: builder)
 //    }
-    
     
     func sendTransaction() {
         
