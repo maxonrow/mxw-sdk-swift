@@ -42,9 +42,28 @@ public class Secp256k1 {
             return privateKey
         }
     }
+    
+    public static func getPublicKey() -> PublicKey {
+        if let publicKey = UserDefaults.standard.string(forKey: "publicKey") {
+            return Secp256k1PublicKey.fromHex(hexPubKey: publicKey)
+        } else {
+            let privateKey = context.newRandomPrivateKey()
+            var pubKey: PublicKey?
+            UserDefaults.standard.set(privateKey.hex(), forKey: "privateKey" )
+            do {
+                pubKey = try context.getPublicKey(privateKey: privateKey)
+                UserDefaults.standard.set(pubKey?.hex(), forKey: "publicKey" )
+            } catch {
+                if #available(iOS 10.0, *) {
+                    print("Error creating public key")
+                }
+            }
+            return pubKey!
+        }
+    }
 
     public init() {
-        self.privateKey = Secp256k1.getPrivateKey()       // no cycle now !!
+        self.privateKey = Secp256k1.getPrivateKey()
         self.signer = Signer(context: Secp256k1.context, privateKey: self.privateKey)
     }
 }

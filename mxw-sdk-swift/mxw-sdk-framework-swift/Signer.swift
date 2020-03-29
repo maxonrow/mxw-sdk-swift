@@ -7,13 +7,13 @@
 //
 
 protocol SignerProvider {
-    func getProvider()
+    func getProvider()->Provider?
     func getAddress()->String
     func getHexAddress()->String
     func getPublicKeyType()->String
     func getCompressedPublicKey()->String
     func signMessage(message:[UInt8], needToHash:Bool)-> String
     func sign(request:TransactionRequest)
-   // func sendTransaction(builder:TransactionValueBuilder)->TransactionResponse
-   // func sendTransaction(request:TransactionRequest)->TransactionResponse
+//    func sendTransaction(builder:TransactionValueBuilder)->TransactionResponse
+//    func sendTransaction(request:TransactionRequest)->TransactionResponse
 }
