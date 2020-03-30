@@ -28,9 +28,9 @@ public class SigningKey {
         self.keyPair = keyPair
         self.privateKey = keyPair.getPrivateKey()
         self.publicKey = keyPair.getPublicKey()
-//        self.compressedPublicKey = keyPair.getCompressedPublicKey()
-//        self.publicKeyType = keyPair.getPublicKeyType()
-//        self.address = Keys.computeAddress(keyPair.getCompressedPublicKey())
+        self.compressedPublicKey = keyPair.getCompressedPublicKey()
+        self.publicKeyType = keyPair.getPublicKeyType()
+        self.address = Keys().computeAddress(publicKey: keyPair.getCompressedPublicKey())
 //        self.hexAddress = Keys.computeHexAddress(address)
     }
     public func getPrivateKey()->String {
@@ -38,7 +38,7 @@ public class SigningKey {
     }
 
     public func setPrivateKey(privateKey:String) {
-        self.privateKey = privateKey;
+        self.privateKey = privateKey
     }
 
     public func getPublicKey() ->String{

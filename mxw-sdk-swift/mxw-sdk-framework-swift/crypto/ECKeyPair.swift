@@ -48,6 +48,10 @@ public class ECKeyPair {
         return Numeric().toHexStringZeroPadded(value: publicKey, size: 130, withPrefix: true)
     }
     
+    func getPublicKeyType() -> String {
+        return "PubKeySecp256k1"
+    }
+    
     public init(privateKey: UInt, publicKey: UInt) {
         self.privateKey = privateKey
         self.publicKey = publicKey
@@ -55,7 +59,7 @@ public class ECKeyPair {
         self.publicKeyBytes = Numeric().hexStringToByteArray(input: getPublicKey())
     }
     public func getCompressedPublicKey()->String {
-        return ""//Numeric().toHexStringZeroPadded(self.compressedPublicKey,Keys.PUBLIC_KEY_SIZE_COMPRESSED_PADDED, true);
+        return Numeric().toHexStringZeroPadded(value: self.compressedPublicKey,size: Keys().PUBLIC_KEY_SIZE_COMPRESSED_PADDED, withPrefix: true)
     }
 
     public func setCompressedPublicKey(compressedPublicKey:String) {

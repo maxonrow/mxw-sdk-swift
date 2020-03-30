@@ -13,7 +13,7 @@ public class Secp256k1 {
 
     private var signer: Signer
     private var privateKey: PrivateKey
-    private static var context = Secp256k1Context()          // << shared !!
+    private static var context = Secp256k1Context()
 
     public func sign(message: [UInt8]) -> String {
         var result = ""
@@ -25,7 +25,7 @@ public class Secp256k1 {
         return result
     }
 
-    public static func getPrivateKey() -> PrivateKey {        // << shared !!
+    public static func getPrivateKey() -> PrivateKey {        
         if let privateKey = UserDefaults.standard.string(forKey: "privateKey") {
             return Secp256k1PrivateKey.fromHex(hexPrivKey: privateKey)
         } else {
@@ -60,6 +60,18 @@ public class Secp256k1 {
             }
             return pubKey!
         }
+    }
+    
+    public static func verify(signature: String, data: [UInt8], publicKey: PublicKey) -> Bool {
+        var result = false
+        do {
+            try result = context.verify(signature: signature, data: data, publicKey: publicKey)
+        } catch {
+            if #available(iOS 10.0, *) {
+                print("Error verifying")
+            }
+        }
+        return result
     }
 
     public init() {

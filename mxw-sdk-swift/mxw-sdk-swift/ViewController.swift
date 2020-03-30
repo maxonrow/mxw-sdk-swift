@@ -18,9 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let dataOne: [Character] = ["a","b","c","d","e"]
         let bytes: [UInt8] = Array(String(dataOne).utf8)
-        
+        let keypair = ECKeyPair(privateKey: 8, publicKey: 7)
+        let x = SigningKey(keyPair: keypair)
 //        print(Secp256k1.init().sign(message: bytes))
-        print(Secp256k1.getPublicKey())
+        print(Wallet(privateKey: x).getHexAddress())
         //        print(AES256CBC.encryptString(stringFile, password: "12345678901234567890123456789012") as Any)
         // Do any additional setup after loading the view.
     }

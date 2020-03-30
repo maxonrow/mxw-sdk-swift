@@ -19,6 +19,7 @@
 		2515F921242B7E3C00098FAD /* TransactionFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515F91C242B7E3C00098FAD /* TransactionFee.swift */; };
 		2515F922242B7E3C00098FAD /* TransactionMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515F91D242B7E3C00098FAD /* TransactionMessage.swift */; };
 		2515F924242B7F0A00098FAD /* ECKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515F923242B7F0A00098FAD /* ECKeyPair.swift */; };
+		2515F9262430AA2D00098FAD /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515F9252430AA2D00098FAD /* Keys.swift */; };
 		252AC33924231EC400083C0D /* KycData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33824231EC400083C0D /* KycData.swift */; };
 		252AC33B24231F3E00083C0D /* KycWhiteListPayLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33A24231F3E00083C0D /* KycWhiteListPayLoad.swift */; };
 		252AC33D242320D500083C0D /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC33C242320D500083C0D /* Signature.swift */; };
@@ -168,6 +169,7 @@
 		2515F91C242B7E3C00098FAD /* TransactionFee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionFee.swift; sourceTree = "<group>"; };
 		2515F91D242B7E3C00098FAD /* TransactionMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionMessage.swift; sourceTree = "<group>"; };
 		2515F923242B7F0A00098FAD /* ECKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECKeyPair.swift; sourceTree = "<group>"; };
+		2515F9252430AA2D00098FAD /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		252AC33824231EC400083C0D /* KycData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycData.swift; sourceTree = "<group>"; };
 		252AC33A24231F3E00083C0D /* KycWhiteListPayLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycWhiteListPayLoad.swift; sourceTree = "<group>"; };
 		252AC33C242320D500083C0D /* Signature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 			children = (
 				259C68A8241F4B0D003668EC /* AES */,
 				259C68352416196A003668EC /* Bech32.swift */,
+				2515F9252430AA2D00098FAD /* Keys.swift */,
 				2515F923242B7F0A00098FAD /* ECKeyPair.swift */,
 				259C6890241B28D5003668EC /* SigningKey.swift */,
 				252AC358242861B100083C0D /* Secp256k1.swift */,
@@ -691,6 +694,7 @@
 				259C68DF241F4E82003668EC /* Authenticator.swift in Sources */,
 				259C68A7241F1F6F003668EC /* KycAddress.swift in Sources */,
 				259C6897241B3E84003668EC /* BlockTag.swift in Sources */,
+				2515F9262430AA2D00098FAD /* Keys.swift in Sources */,
 				259C689A241B5496003668EC /* BlockTagNumber.swift in Sources */,
 				259C6905241F64A2003668EC /* StreamEncryptor.swift in Sources */,
 				2515F920242B7E3C00098FAD /* TransactionResponse.swift in Sources */,

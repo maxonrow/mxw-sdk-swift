@@ -21,10 +21,10 @@ public class Wallet: SignerProvider {
     public init( privateKey:SigningKey) {
     }
     
-    func getAddress() -> String {
+    public func getAddress() -> String {
         return signingKey.getAddress()
     }
-    func getHexAddress() -> String {
+    public func getHexAddress() -> String {
         return signingKey.getHexAddress()
     }
     func getPublicKey() -> String {
@@ -57,7 +57,7 @@ public class Wallet: SignerProvider {
     func sendTransaction() {
     }
     
-    public  func isWhitelisted(blockTag:BlockTag)->Bool {
+    public func isWhitelisted(blockTag:BlockTag)->Bool {
         return self.provider!.isWhiteListed(addressOrName: self.getAddress(), blockTag: blockTag)
     }
 
@@ -69,7 +69,7 @@ public class Wallet: SignerProvider {
 //        self.accountNumber = self.provider!.getAccountNumber(addressOrName: self.getAddress(), blockTag: blockTag)
 //        return self.accountNumber;
 //    }
-    public  func fromMnemonic(mnemonic:String, path:[Int]) {
+    public func fromMnemonic(mnemonic:String, path:[Int]) {
         return SigningKey().setMnemonic(mnemonic: mnemonic)
     }
 //    public func getKycAddress(blockTag:BlockTag) {
