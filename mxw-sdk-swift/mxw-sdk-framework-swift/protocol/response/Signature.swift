@@ -6,12 +6,14 @@
 //  Copyright © 2020 William Loke. All rights reserved.
 //
 
+import SawtoothSigning
+
 public class Signature {
     
-    private var publicKey: MXWPublicKey
+    private var publicKey: PublicKey
     private var signature: String
     
-    public init(publicKey: MXWPublicKey, signature: String) {
+    public init(publicKey: PublicKey, signature: String) {
         self.publicKey = publicKey
         self.signature = signature
     }

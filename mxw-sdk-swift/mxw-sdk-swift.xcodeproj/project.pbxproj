@@ -31,7 +31,6 @@
 		252AC35624285D3300083C0D /* SawtoothSigning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; };
 		252AC35724285D3300083C0D /* SawtoothSigning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		252AC359242861B100083C0D /* Secp256k1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC358242861B100083C0D /* Secp256k1.swift */; };
-		252AC35B2428647A00083C0D /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC35A2428647A00083C0D /* PublicKey.swift */; };
 		259C67FD24161919003668EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FC24161919003668EC /* AppDelegate.swift */; };
 		259C67FF24161919003668EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FE24161919003668EC /* SceneDelegate.swift */; };
 		259C680124161919003668EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C680024161919003668EC /* ViewController.swift */; };
@@ -179,7 +178,6 @@
 		252AC351242852AB00083C0D /* secp256k1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = secp256k1.framework; path = Carthage/Build/iOS/secp256k1.framework; sourceTree = "<group>"; };
 		252AC35524285D3300083C0D /* SawtoothSigning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SawtoothSigning.framework; path = Carthage/Build/iOS/SawtoothSigning.framework; sourceTree = "<group>"; };
 		252AC358242861B100083C0D /* Secp256k1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secp256k1.swift; sourceTree = "<group>"; };
-		252AC35A2428647A00083C0D /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
 		259C67F924161919003668EC /* mxw-sdk-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mxw-sdk-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		259C67FC24161919003668EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		259C67FE24161919003668EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -456,7 +454,6 @@
 			children = (
 				259C68A1241F1D31003668EC /* kyc */,
 				2515F919242B7E3C00098FAD /* Coin.swift */,
-				252AC35A2428647A00083C0D /* PublicKey.swift */,
 				252AC33C242320D500083C0D /* Signature.swift */,
 				2515F91C242B7E3C00098FAD /* TransactionFee.swift */,
 				2515F91D242B7E3C00098FAD /* TransactionMessage.swift */,
@@ -747,7 +744,6 @@
 				2515F922242B7E3C00098FAD /* TransactionMessage.swift in Sources */,
 				259C687D2419E361003668EC /* Network.swift in Sources */,
 				259C68ED241F5018003668EC /* PKCS5.swift in Sources */,
-				252AC35B2428647A00083C0D /* PublicKey.swift in Sources */,
 				259C68EF241F503B003668EC /* PKCS7Padding.swift in Sources */,
 				259C68D9241F4DFA003668EC /* SHA1.swift in Sources */,
 				259C68F1241F5080003668EC /* ISO78164Padding.swift in Sources */,
