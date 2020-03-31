@@ -444,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				2515F910242B7DD700098FAD /* messages */,
+				259C6899241B5496003668EC /* BlockTagNumber.swift */,
 				259C6896241B3E84003668EC /* BlockTag.swift */,
 				2515F917242B7E0500098FAD /* TransactionRequest.swift */,
 			);
@@ -454,7 +455,6 @@
 			isa = PBXGroup;
 			children = (
 				259C68A1241F1D31003668EC /* kyc */,
-				259C6899241B5496003668EC /* BlockTagNumber.swift */,
 				2515F919242B7E3C00098FAD /* Coin.swift */,
 				252AC35A2428647A00083C0D /* PublicKey.swift */,
 				252AC33C242320D500083C0D /* Signature.swift */,

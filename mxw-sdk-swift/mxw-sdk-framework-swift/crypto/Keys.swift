@@ -42,16 +42,18 @@ public class Keys {
         return Numeric().hexStringToByteArray(input: key).toHexString()
     }
     
-    public func recoverPublicKey() {
-        
+    public func recoverPublicKey(digest: [UInt8], Signature: Signature) -> String {
+        let key: UInt = Sign().signedMessageHashToKey(messageHash: digest)
+        return computePublicKey(key: Numeric().toHexStringWithPrefix(value: key), compressed: true)
     }
     
-    public func recoverAddress() {
-        
-    }
+//    public func recoverAddress(digest:[UInt8], signature: Signature) -> String {
+//        return computeAddress(publicKey: recoverPublicKey(digest: digest, Signature: <#Signature#>))
+//    }
     
-    public func getKeyAddressHex() {
-        
+    public func getKeyAddressHex(payload: String) -> String {
+        let hash = [UInt8](hex: payload)
+        return Numeric().toHexString(input: hash)
     }
     
     public func verifyMessage() {

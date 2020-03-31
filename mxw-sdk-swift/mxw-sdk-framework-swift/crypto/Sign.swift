@@ -9,8 +9,11 @@
 public class Sign {
     
     public func publicKeyFromPrivate(privKey: UInt, compressed: Bool) -> UInt {
-//        var point = 
         return privKey
+    }
+    
+    public func signedMessageHashToKey(messageHash: [UInt8]) -> UInt {
+        return 0
     }
     
     public init() {}

@@ -31,8 +31,7 @@ public class Wallet: SignerProvider {
         return Secp256k1.getPublicKey().hex() // return signingKey.getPublicKey()
     }
     func getPublicKeyType() -> String {
-           return "PubKeySecp256k1" // temporarily hardcoded
-        //return signingKey.getPublicKeyType()
+        return signingKey.getPublicKeyType()
     }
     func getCompressedPublicKey() -> String {
         return signingKey.getCompressedPublicKey()
