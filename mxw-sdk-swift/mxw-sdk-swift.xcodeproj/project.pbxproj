@@ -62,7 +62,6 @@
 		259C6897241B3E84003668EC /* BlockTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6896241B3E84003668EC /* BlockTag.swift */; };
 		259C689A241B5496003668EC /* BlockTagNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6899241B5496003668EC /* BlockTagNumber.swift */; };
 		259C689C241B6091003668EC /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689B241B6091003668EC /* Sign.swift */; };
-		259C68A0241B7403003668EC /* AES256Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C689F241B7403003668EC /* AES256Test.swift */; };
 		259C68A3241F1D4E003668EC /* KycWhiteListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68A2241F1D4E003668EC /* KycWhiteListModel.swift */; };
 		259C68A5241F1F56003668EC /* KycWhiteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68A4241F1F56003668EC /* KycWhiteList.swift */; };
 		259C68A7241F1F6F003668EC /* KycAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C68A6241F1F6F003668EC /* KycAddress.swift */; };
@@ -213,7 +212,6 @@
 		259C6896241B3E84003668EC /* BlockTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTag.swift; sourceTree = "<group>"; };
 		259C6899241B5496003668EC /* BlockTagNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTagNumber.swift; sourceTree = "<group>"; };
 		259C689B241B6091003668EC /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
-		259C689F241B7403003668EC /* AES256Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Test.swift; sourceTree = "<group>"; };
 		259C68A2241F1D4E003668EC /* KycWhiteListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycWhiteListModel.swift; sourceTree = "<group>"; };
 		259C68A4241F1F56003668EC /* KycWhiteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycWhiteList.swift; sourceTree = "<group>"; };
 		259C68A6241F1F6F003668EC /* KycAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycAddress.swift; sourceTree = "<group>"; };
@@ -387,7 +385,6 @@
 			children = (
 				259C683724161C6F003668EC /* Bech32Test.swift */,
 				256DAD5E24343F3E00936CC5 /* SECP256k1Test.swift */,
-				259C689F241B7403003668EC /* AES256Test.swift */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
@@ -777,7 +774,6 @@
 				259C683824161C6F003668EC /* Bech32Test.swift in Sources */,
 				256DAD5F24343F3E00936CC5 /* SECP256k1Test.swift in Sources */,
 				259C686624163BD1003668EC /* ConvertTest.swift in Sources */,
-				259C68A0241B7403003668EC /* AES256Test.swift in Sources */,
 				259C6874241733F9003668EC /* NumericsTest.swift in Sources */,
 				259C685824161E4C003668EC /* BytesTest.swift in Sources */,
 			);
