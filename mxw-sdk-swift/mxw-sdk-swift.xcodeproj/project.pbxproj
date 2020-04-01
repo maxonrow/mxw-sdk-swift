@@ -31,6 +31,7 @@
 		252AC35624285D3300083C0D /* SawtoothSigning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; };
 		252AC35724285D3300083C0D /* SawtoothSigning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		252AC359242861B100083C0D /* Secp256k1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC358242861B100083C0D /* Secp256k1.swift */; };
+		256DAD5F24343F3E00936CC5 /* SECP256k1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DAD5E24343F3E00936CC5 /* SECP256k1Test.swift */; };
 		259C67FD24161919003668EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FC24161919003668EC /* AppDelegate.swift */; };
 		259C67FF24161919003668EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FE24161919003668EC /* SceneDelegate.swift */; };
 		259C680124161919003668EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C680024161919003668EC /* ViewController.swift */; };
@@ -178,6 +179,7 @@
 		252AC351242852AB00083C0D /* secp256k1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = secp256k1.framework; path = Carthage/Build/iOS/secp256k1.framework; sourceTree = "<group>"; };
 		252AC35524285D3300083C0D /* SawtoothSigning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SawtoothSigning.framework; path = Carthage/Build/iOS/SawtoothSigning.framework; sourceTree = "<group>"; };
 		252AC358242861B100083C0D /* Secp256k1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secp256k1.swift; sourceTree = "<group>"; };
+		256DAD5E24343F3E00936CC5 /* SECP256k1Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECP256k1Test.swift; sourceTree = "<group>"; };
 		259C67F924161919003668EC /* mxw-sdk-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mxw-sdk-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		259C67FC24161919003668EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		259C67FE24161919003668EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				259C683724161C6F003668EC /* Bech32Test.swift */,
+				256DAD5E24343F3E00936CC5 /* SECP256k1Test.swift */,
 				259C689F241B7403003668EC /* AES256Test.swift */,
 			);
 			path = crypto;
@@ -772,6 +775,7 @@
 			files = (
 				259C686E24172B09003668EC /* Base64sTest.swift in Sources */,
 				259C683824161C6F003668EC /* Bech32Test.swift in Sources */,
+				256DAD5F24343F3E00936CC5 /* SECP256k1Test.swift in Sources */,
 				259C686624163BD1003668EC /* ConvertTest.swift in Sources */,
 				259C68A0241B7403003668EC /* AES256Test.swift in Sources */,
 				259C6874241733F9003668EC /* NumericsTest.swift in Sources */,

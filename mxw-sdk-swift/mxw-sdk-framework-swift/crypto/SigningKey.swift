@@ -31,7 +31,7 @@ public class SigningKey {
         self.compressedPublicKey = keyPair.getCompressedPublicKey()
         self.publicKeyType = keyPair.getPublicKeyType()
         self.address = Keys().computeAddress(publicKey: keyPair.getCompressedPublicKey())
-//        self.hexAddress = Keys.computeHexAddress(address)
+        self.hexAddress = Keys().computeHexAddress(address: address ?? "")
     }
     public func getPrivateKey()->String {
         return privateKey ?? ""

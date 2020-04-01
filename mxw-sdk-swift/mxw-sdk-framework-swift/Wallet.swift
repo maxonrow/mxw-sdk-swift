@@ -18,9 +18,7 @@ public class Wallet: SignerProvider {
     func getProvider() -> Provider? {
         return self.provider
     }
-    public init( privateKey:SigningKey) {
-    }
-    
+
     public func getAddress() -> String {
         return signingKey.getAddress()
     }
@@ -60,9 +58,9 @@ public class Wallet: SignerProvider {
         return self.provider!.isWhiteListed(addressOrName: self.getAddress(), blockTag: blockTag)
     }
 
-//    func createRandom() ->ECKeyPair{
-//        return
-//    }
+    func createRandom() ->ECKeyPair{
+        return Keys().createSecp256k1KeyPair()
+    }
     
 //    func getAccountNumber(blockTag:BlockTag)->Int{
 //        self.accountNumber = self.provider!.getAccountNumber(addressOrName: self.getAddress(), blockTag: blockTag)
@@ -84,7 +82,7 @@ public class Wallet: SignerProvider {
     public func  createNewWallet() {
         
     }
-    public init(keyPair:ECKeyPair) {
-        keyPair.getPrivateKey()
-    }
+    
+    public init() {}
+    
 }

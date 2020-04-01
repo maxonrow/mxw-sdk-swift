@@ -16,8 +16,8 @@ public class Keys {
     var ADDRESS_SIZE = 160
     var ADDRESS_LENGTH_IN_HEX = 160 >> 2
     
-    public func createSecp256k1KeyPair() {
-        
+    public func createSecp256k1KeyPair() -> ECKeyPair {
+        return ECKeyPair(privateKey: 0, publicKey: 0)
     }
     
     public func computeAddress(publicKey: String) -> String {
