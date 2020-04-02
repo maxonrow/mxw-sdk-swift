@@ -19,8 +19,7 @@ class ViewController: UIViewController {
         let dataOne: [Character] = ["a","b","c","d","e"]
         let bytes: [UInt8] = Array(String(dataOne).utf8)
         let keypair = ECKeyPair(privateKey: 8, publicKey: 7)
-        let x = SigningKey(keyPair: keypair)
-        //        print(AES256CBC.encryptString(stringFile, password: "12345678901234567890123456789012") as Any)
+//        print(Bech32().encode(Constants.addressPrefix, values: <#Data#>))
         // Do any additional setup after loading the view.
     }
     

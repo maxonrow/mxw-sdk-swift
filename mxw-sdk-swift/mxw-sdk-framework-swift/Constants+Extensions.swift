@@ -9,8 +9,8 @@
 import UIKit
 
 
-class Constants {
-    static let addressPrefix = "mxw"
+public class Constants {
+       public static let addressPrefix = "mxw"
        static let AddressZero = "mxw000000000000000000000000000000000000000"
        static let HashZero = "0x0000000000000000000000000000000000000000000000000000000000000000"
 
