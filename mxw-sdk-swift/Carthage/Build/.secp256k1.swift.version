@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.1.4",
+  "iOS" : [
+    {
+      "name" : "secp256k1",
+      "hash" : "454d79d3e600b4611ebf3a7f05ee78f78b83c9640696335741e7b8120c3da8ab"
+    }
+  ]
+}

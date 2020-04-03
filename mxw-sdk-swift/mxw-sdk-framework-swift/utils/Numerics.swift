@@ -54,6 +54,36 @@ public class Numeric {
         return input.hexa
     }
     
+    public func toHexStringWithPrefix(value: UInt) -> String {
+        return "0x\(String.init(value, radix: 16))"
+    }
+    
+    public func toHexStringNoPrefix(input: [UInt8]) -> String {
+        return toHexString(input: input, offset: 0, length: input.count, withPrefix: false)
+    }
+    
+    public func toHexStringNoPrefix(value: UInt) -> String {
+        return String.init(value, radix: 16)
+      }
+    
+    public func toHexStringZeroPadded(value: UInt, size: Int, withPrefix: Bool) -> String {
+        var result = toHexStringNoPrefix(value: value)
+        
+        if (result.count > size) {
+            print("Value \(result) is larger than length \(size)")
+        }
+        
+        if result.count < size {
+            result = result.padding(toLength: (size - result.count), withPad: "0", startingAt: 0)
+        }
+        
+        if (withPrefix) {
+            return "0x\(result)"
+        } else {
+            return result
+        }
+    }
+    
     public func toHexString(input: [UInt8], offset: Int, length: Int, withPrefix: Bool) -> String {
         var newString = ""
         if withPrefix {

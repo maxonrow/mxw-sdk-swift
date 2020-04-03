@@ -144,6 +144,8 @@ public class Bech32 {
         }
         return (hrp, Data(values[..<(vSize-6)]))
     }
+    
+    public init() {}
 }
 
 extension Bech32 {

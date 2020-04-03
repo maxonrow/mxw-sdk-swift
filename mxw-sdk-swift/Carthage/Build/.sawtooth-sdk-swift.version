@@ -1,0 +1,10 @@
+{
+  "commitish" : "9c3fe7f56fcf585a3738605cc42e466bed0506a5",
+  "iOS" : [
+    {
+      "name" : "SawtoothSigning",
+      "hash" : "daeb7c0b7b77f2ef59d97ff73d9d29df82c47f11fc66009dddc04a2c64ea130c",
+      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+    }
+  ]
+}
