@@ -23,7 +23,7 @@ public class Keys {
     public func computeAddress(publicKey: String) -> String {
         let key = Numeric().hexStringToByteArray(input: publicKey)
         let bytes = Data(fromArray: key)
-        return Address().getAddress(address: Bech32().encode(Constants.addressPrefix, values: bytes))! //ERROR HERE
+        return Address().getAddress(address: Bech32().encode(Constants.addressPrefix, values: bytes))! 
     }
     
     public func computeHexAddress(address: String) -> String {

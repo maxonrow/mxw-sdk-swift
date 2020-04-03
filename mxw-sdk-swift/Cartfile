@@ -1,1 +1,2 @@
 github "bitwiseio/sawtooth-sdk-swift" "master"
+github "yuzushioh/EthereumKit"

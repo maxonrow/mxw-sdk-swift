@@ -1,0 +1,10 @@
+{
+  "commitish" : "2.0.1",
+  "iOS" : [
+    {
+      "name" : "EthereumKit",
+      "hash" : "4cf551da2c3f2b8d09ed61bf7738e2d644884a7d8d94f266f19e21efe4fe6976",
+      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+    }
+  ]
+}

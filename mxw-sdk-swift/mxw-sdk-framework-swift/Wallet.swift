@@ -5,9 +5,9 @@
 //  Created by William Loke on 12/03/2020.
 //  Copyright © 2020 William Loke. All rights reserved.
 //
-import CryptoKit
+import EthereumKit
 
-public class Wallet: SignerProvider {
+public class mxwWallet: SignerProvider {
     
     static  let MISSING_PROVIDER = "missing provider";
     var signingKey = SigningKey()
@@ -19,10 +19,10 @@ public class Wallet: SignerProvider {
         return self.provider
     }
 
-    public func getAddress() -> String {
+    func getAddress() -> String {
         return signingKey.getAddress()
     }
-    public func getHexAddress() -> String {
+    func getHexAddress() -> String {
         return signingKey.getHexAddress()
     }
     func getPublicKey() -> String {
@@ -54,7 +54,7 @@ public class Wallet: SignerProvider {
     func sendTransaction() {
     }
     
-    public func isWhitelisted(blockTag:BlockTag)->Bool {
+    func isWhitelisted(blockTag:BlockTag)->Bool {
         return self.provider!.isWhiteListed(addressOrName: self.getAddress(), blockTag: blockTag)
     }
 
@@ -69,18 +69,20 @@ public class Wallet: SignerProvider {
     public func fromMnemonic(mnemonic:String, path:[Int]) {
         return SigningKey().setMnemonic(mnemonic: mnemonic)
     }
-//    public func getKycAddress(blockTag:BlockTag) {
+//    func getKycAddress(blockTag:BlockTag) {
 //        return self.provider!.getKycAddress(self.getAddress(), blockTag);
 //    }
-    public func getKycAddress(blockTag:BlockTag)->String {
+    func getKycAddress(blockTag:BlockTag)->String {
         return (self.provider!.getKycAddress(addressOrName: self.getAddress()))
     }
-    public func getBalance(blockTag:BlockTag) {
+    func getBalance(blockTag:BlockTag) {
         return (self.provider?.getBlock(blockHashOrBlockTag: blockTag))!
     }
     
-    public func  createNewWallet() {
-        
+    public func createNewWallet() -> Wallet {
+        let mnemonic = Mnemonic.create()
+        let seed = try! Mnemonic.createSeed(mnemonic: mnemonic)
+        return try! Wallet(seed: seed, network: .ropsten, debugPrints: true)
     }
     
     public init() {}

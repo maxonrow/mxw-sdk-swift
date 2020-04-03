@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let dataOne: [Character] = ["a","b","c","d","e"]
         let bytes: [UInt8] = Array(String(dataOne).utf8)
         let keypair = ECKeyPair(privateKey: 8, publicKey: 7)
-//        print(Bech32().encode(Constants.addressPrefix, values: <#Data#>))
+        print(mxwWallet.init().createNewWallet())
         // Do any additional setup after loading the view.
     }
     

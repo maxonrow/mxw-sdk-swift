@@ -18,11 +18,7 @@ public class SigningKey {
     
     private var path: Int?
     private var keyPair: ECKeyPair?
-    
-    public func SigningKey(privateKey:String){
-        //Numeric().hexStringToByteArray(input: privateKey)
-    }
-     
+    private static var keys = Keys()
     public convenience init(keyPair:ECKeyPair){
         self.init()
         self.keyPair = keyPair
@@ -30,8 +26,8 @@ public class SigningKey {
         self.publicKey = keyPair.getPublicKey()
         self.compressedPublicKey = keyPair.getCompressedPublicKey()
         self.publicKeyType = keyPair.getPublicKeyType()
-        self.address = Keys().computeAddress(publicKey: keyPair.getCompressedPublicKey())
-        self.hexAddress = Keys().computeHexAddress(address: address ?? "")
+        self.address = SigningKey.keys.computeAddress(publicKey: keyPair.getCompressedPublicKey())
+        self.hexAddress = SigningKey.keys.computeHexAddress(address: address ?? "")
     }
     public func getPrivateKey()->String {
         return privateKey ?? ""
@@ -97,7 +93,7 @@ public class SigningKey {
         self.path = path
     }
 
-    public  func getKeyPair()->ECKeyPair? {
+    public func getKeyPair()->ECKeyPair? {
         return keyPair
     }
 

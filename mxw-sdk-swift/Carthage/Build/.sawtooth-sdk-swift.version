@@ -3,7 +3,7 @@
   "iOS" : [
     {
       "name" : "SawtoothSigning",
-      "hash" : "d491813c8bdf26c918398004fca913758d9cbe20e3355b1e8e68fd19a43618b1",
+      "hash" : "daeb7c0b7b77f2ef59d97ff73d9d29df82c47f11fc66009dddc04a2c64ea130c",
       "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
     }
   ]

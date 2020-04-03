@@ -58,11 +58,8 @@ public class ECKeyPair {
         self.compressedPublicKey = Sign().publicKeyFromPrivate(privKey: privateKey, compressed: true)
         self.publicKeyBytes = Numeric().hexStringToByteArray(input: getPublicKey())
     }
-    public func getCompressedPublicKey()->String {
+    func getCompressedPublicKey()->String {
         return Numeric().toHexStringZeroPadded(value: self.compressedPublicKey,size: Keys().PUBLIC_KEY_SIZE_COMPRESSED_PADDED, withPrefix: true)
     }
-
-    public func setCompressedPublicKey(compressedPublicKey:String) {
-        //self.compressedPublicKey = Numeric().hexStringToByteArray(input: compressedPublicKey)
-    }
+    
 }

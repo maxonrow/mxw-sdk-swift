@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,12 +26,28 @@
 		252AC341242452F300083C0D /* KycRevokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC340242452F300083C0D /* KycRevokeModel.swift */; };
 		252AC344242453FF00083C0D /* KycRevokePayLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC343242453FF00083C0D /* KycRevokePayLoad.swift */; };
 		252AC3462424549500083C0D /* KycRevoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC3452424549500083C0D /* KycRevoke.swift */; };
-		252AC352242852AB00083C0D /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; };
-		252AC353242852AB00083C0D /* secp256k1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		252AC35624285D3300083C0D /* SawtoothSigning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; };
-		252AC35724285D3300083C0D /* SawtoothSigning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		252AC353242852AB00083C0D /* secp256k1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		252AC35724285D3300083C0D /* SawtoothSigning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		252AC359242861B100083C0D /* Secp256k1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AC358242861B100083C0D /* Secp256k1.swift */; };
 		256DAD5F24343F3E00936CC5 /* SECP256k1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DAD5E24343F3E00936CC5 /* SECP256k1Test.swift */; };
+		256DAD6A2435ADBB00936CC5 /* CryptoEthereumSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD662435ADBB00936CC5 /* CryptoEthereumSwift.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256DAD6C2435ADBB00936CC5 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD672435ADBB00936CC5 /* CryptoSwift.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256DAD6E2435ADBB00936CC5 /* EthereumKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD682435ADBB00936CC5 /* EthereumKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256DAD792436FE6900936CC5 /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD662435ADBB00936CC5 /* CryptoEthereumSwift.framework */; platformFilter = ios; };
+		256DAD7A2436FE6900936CC5 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD672435ADBB00936CC5 /* CryptoSwift.framework */; platformFilter = ios; };
+		256DAD7B2436FE6900936CC5 /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD682435ADBB00936CC5 /* EthereumKit.framework */; platformFilter = ios; };
+		256DAD7C2436FE6900936CC5 /* SawtoothSigning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; platformFilter = ios; };
+		256DAD7D2436FE6900936CC5 /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; platformFilter = ios; };
+		256DAD83243701B800936CC5 /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD662435ADBB00936CC5 /* CryptoEthereumSwift.framework */; };
+		256DAD84243701B800936CC5 /* CryptoEthereumSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD662435ADBB00936CC5 /* CryptoEthereumSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256DAD85243701B800936CC5 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD672435ADBB00936CC5 /* CryptoSwift.framework */; };
+		256DAD86243701B800936CC5 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD672435ADBB00936CC5 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256DAD87243701B800936CC5 /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD682435ADBB00936CC5 /* EthereumKit.framework */; };
+		256DAD88243701B800936CC5 /* EthereumKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAD682435ADBB00936CC5 /* EthereumKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256DAD89243701B800936CC5 /* SawtoothSigning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; };
+		256DAD8A243701B800936CC5 /* SawtoothSigning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC35524285D3300083C0D /* SawtoothSigning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		256DAD8B243701B800936CC5 /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; };
+		256DAD8C243701B800936CC5 /* secp256k1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252AC351242852AB00083C0D /* secp256k1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		259C67FD24161919003668EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FC24161919003668EC /* AppDelegate.swift */; };
 		259C67FF24161919003668EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C67FE24161919003668EC /* SceneDelegate.swift */; };
 		259C680124161919003668EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C680024161919003668EC /* ViewController.swift */; };
@@ -103,7 +119,6 @@
 		259C6907241F64CE003668EC /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6906241F64CE003668EC /* UInt64+Extension.swift */; };
 		259C6909241F659C003668EC /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C6908241F659C003668EC /* Collection+Extension.swift */; };
 		259C690D241F67BE003668EC /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C690C241F67BE003668EC /* CBC.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,8 +152,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				256DAD6A2435ADBB00936CC5 /* CryptoEthereumSwift.framework in Embed Frameworks */,
 				252AC353242852AB00083C0D /* secp256k1.framework in Embed Frameworks */,
+				256DAD6E2435ADBB00936CC5 /* EthereumKit.framework in Embed Frameworks */,
 				252AC35724285D3300083C0D /* SawtoothSigning.framework in Embed Frameworks */,
+				256DAD6C2435ADBB00936CC5 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +167,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				256DAD88243701B800936CC5 /* EthereumKit.framework in Embed Frameworks */,
+				256DAD8C243701B800936CC5 /* secp256k1.framework in Embed Frameworks */,
+				256DAD86243701B800936CC5 /* CryptoSwift.framework in Embed Frameworks */,
+				256DAD84243701B800936CC5 /* CryptoEthereumSwift.framework in Embed Frameworks */,
 				259C682B24161947003668EC /* mxw_sdk_framework_swift.framework in Embed Frameworks */,
+				256DAD8A243701B800936CC5 /* SawtoothSigning.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +203,9 @@
 		252AC35524285D3300083C0D /* SawtoothSigning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SawtoothSigning.framework; path = Carthage/Build/iOS/SawtoothSigning.framework; sourceTree = "<group>"; };
 		252AC358242861B100083C0D /* Secp256k1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secp256k1.swift; sourceTree = "<group>"; };
 		256DAD5E24343F3E00936CC5 /* SECP256k1Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECP256k1Test.swift; sourceTree = "<group>"; };
+		256DAD662435ADBB00936CC5 /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
+		256DAD672435ADBB00936CC5 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		256DAD682435ADBB00936CC5 /* EthereumKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EthereumKit.framework; path = Carthage/Build/iOS/EthereumKit.framework; sourceTree = "<group>"; };
 		259C67F924161919003668EC /* mxw-sdk-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mxw-sdk-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		259C67FC24161919003668EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		259C67FE24161919003668EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -254,7 +280,6 @@
 		259C6906241F64CE003668EC /* UInt64+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt64+Extension.swift"; sourceTree = "<group>"; };
 		259C6908241F659C003668EC /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		259C690C241F67BE003668EC /* CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBC.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,7 +287,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256DAD87243701B800936CC5 /* EthereumKit.framework in Frameworks */,
+				256DAD8B243701B800936CC5 /* secp256k1.framework in Frameworks */,
+				256DAD85243701B800936CC5 /* CryptoSwift.framework in Frameworks */,
+				256DAD83243701B800936CC5 /* CryptoEthereumSwift.framework in Frameworks */,
 				259C682A24161947003668EC /* mxw_sdk_framework_swift.framework in Frameworks */,
+				256DAD89243701B800936CC5 /* SawtoothSigning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +300,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252AC352242852AB00083C0D /* secp256k1.framework in Frameworks */,
-				252AC35624285D3300083C0D /* SawtoothSigning.framework in Frameworks */,
+				256DAD792436FE6900936CC5 /* CryptoEthereumSwift.framework in Frameworks */,
+				256DAD7A2436FE6900936CC5 /* CryptoSwift.framework in Frameworks */,
+				256DAD7B2436FE6900936CC5 /* EthereumKit.framework in Frameworks */,
+				256DAD7C2436FE6900936CC5 /* SawtoothSigning.framework in Frameworks */,
+				256DAD7D2436FE6900936CC5 /* secp256k1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +332,9 @@
 		252AC350242852AB00083C0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				256DAD662435ADBB00936CC5 /* CryptoEthereumSwift.framework */,
+				256DAD672435ADBB00936CC5 /* CryptoSwift.framework */,
+				256DAD682435ADBB00936CC5 /* EthereumKit.framework */,
 				252AC35524285D3300083C0D /* SawtoothSigning.framework */,
 				252AC351242852AB00083C0D /* secp256k1.framework */,
 			);
@@ -533,7 +569,6 @@
 			path = BlockMode;
 			sourceTree = "<group>";
 		};
-
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -620,7 +655,7 @@
 					};
 					259C681424161947003668EC = {
 						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1130;
+						LastSwiftMigration = 1140;
 					};
 					259C681C24161947003668EC = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -943,6 +978,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3596BNN9SB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mxw-sdk-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -962,6 +1001,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3596BNN9SB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "mxw-sdk-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -977,6 +1020,7 @@
 		259C682D24161947003668EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1010,6 +1054,7 @@
 		259C682E24161947003668EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
