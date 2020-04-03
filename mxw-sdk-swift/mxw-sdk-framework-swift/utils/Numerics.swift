@@ -112,6 +112,7 @@ public class Numeric {
     
     public func isIntegerValue(value: Double) -> Bool {
         return (value.truncatingRemainder(dividingBy: 1) == 0)
+
     }
     
     public init() {}
